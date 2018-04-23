@@ -12,6 +12,13 @@
 		39582910208DD0FB00543469 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3958290E208DD0FB00543469 /* Main.storyboard */; };
 		39582912208DD0FB00543469 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 39582911208DD0FB00543469 /* Assets.xcassets */; };
 		39582915208DD0FB00543469 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39582913208DD0FB00543469 /* LaunchScreen.storyboard */; };
+		39582921208DD23100543469 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39582920208DD23100543469 /* Coordinator.swift */; };
+		39582923208DD26F00543469 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39582922208DD26F00543469 /* AppCoordinator.swift */; };
+		39582925208DD71700543469 /* ArticleListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39582924208DD71700543469 /* ArticleListCoordinator.swift */; };
+		39582927208DE0B300543469 /* ArticleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39582926208DE0B300543469 /* ArticleListViewModel.swift */; };
+		3958292A208DE10F00543469 /* ArticleListViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39582929208DE10F00543469 /* ArticleListViewModelProtocol.swift */; };
+		3958292C208DE16E00543469 /* ArticleListModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3958292B208DE16E00543469 /* ArticleListModelProtocol.swift */; };
+		3958292F208DE42B00543469 /* ArticleListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3958292E208DE42B00543469 /* ArticleListModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		39582911208DD0FB00543469 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		39582914208DD0FB00543469 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		39582916208DD0FB00543469 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		39582920208DD23100543469 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		39582922208DD26F00543469 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		39582924208DD71700543469 /* ArticleListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListCoordinator.swift; sourceTree = "<group>"; };
+		39582926208DE0B300543469 /* ArticleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewModel.swift; sourceTree = "<group>"; };
+		39582929208DE10F00543469 /* ArticleListViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListViewModelProtocol.swift; sourceTree = "<group>"; };
+		3958292B208DE16E00543469 /* ArticleListModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListModelProtocol.swift; sourceTree = "<group>"; };
+		3958292E208DE42B00543469 /* ArticleListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleListModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,10 @@
 		39582909208DD0FB00543469 /* MVVMCBeta2 */ = {
 			isa = PBXGroup;
 			children = (
+				3958291F208DD1DD00543469 /* views */,
+				3958291E208DD1D500543469 /* viewmodels */,
+				3958291D208DD1CE00543469 /* models */,
+				3958291C208DD12900543469 /* coordinators */,
 				3958290A208DD0FB00543469 /* AppDelegate.swift */,
 				3958290C208DD0FB00543469 /* ViewController.swift */,
 				3958290E208DD0FB00543469 /* Main.storyboard */,
@@ -62,6 +80,57 @@
 				39582916208DD0FB00543469 /* Info.plist */,
 			);
 			path = MVVMCBeta2;
+			sourceTree = "<group>";
+		};
+		3958291C208DD12900543469 /* coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				39582920208DD23100543469 /* Coordinator.swift */,
+				39582922208DD26F00543469 /* AppCoordinator.swift */,
+				39582924208DD71700543469 /* ArticleListCoordinator.swift */,
+			);
+			path = coordinators;
+			sourceTree = "<group>";
+		};
+		3958291D208DD1CE00543469 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				3958292D208DE1E400543469 /* protocols */,
+				3958292E208DE42B00543469 /* ArticleListModel.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		3958291E208DD1D500543469 /* viewmodels */ = {
+			isa = PBXGroup;
+			children = (
+				39582928208DE0E000543469 /* protocols */,
+				39582926208DE0B300543469 /* ArticleListViewModel.swift */,
+			);
+			path = viewmodels;
+			sourceTree = "<group>";
+		};
+		3958291F208DD1DD00543469 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		39582928208DE0E000543469 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				39582929208DE10F00543469 /* ArticleListViewModelProtocol.swift */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		3958292D208DE1E400543469 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				3958292B208DE16E00543469 /* ArticleListModelProtocol.swift */,
+			);
+			path = protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +205,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39582923208DD26F00543469 /* AppCoordinator.swift in Sources */,
+				3958292F208DE42B00543469 /* ArticleListModel.swift in Sources */,
+				39582927208DE0B300543469 /* ArticleListViewModel.swift in Sources */,
+				3958292C208DE16E00543469 /* ArticleListModelProtocol.swift in Sources */,
 				3958290D208DD0FB00543469 /* ViewController.swift in Sources */,
 				3958290B208DD0FB00543469 /* AppDelegate.swift in Sources */,
+				39582925208DD71700543469 /* ArticleListCoordinator.swift in Sources */,
+				39582921208DD23100543469 /* Coordinator.swift in Sources */,
+				3958292A208DE10F00543469 /* ArticleListViewModelProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
